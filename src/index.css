@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+   font-family: "Roboto", sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000;
+  /* background: url(https://res.cloudinary.com/chikadibia/image/upload/v1717251956/School-Dashboard-Campus-Picture_r4r9oo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+}

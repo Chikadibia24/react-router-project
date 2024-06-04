@@ -1,0 +1,152 @@
+/* html{
+  font-family: "Roboto", sans-serif;
+} */
+
+#root {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid green; */
+  padding-bottom: 10px;
+}
+
+.nav{
+  background: rgba(255,255,255,0.1);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.nav-list{
+  background: rgba(255,255,255,0.1);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.active{
+  background-color: rgb(0,0,0);
+  color: #b6b3b3;
+  margin-bottom: 0;
+  position: relative;
+}
+
+link.hover::before,
+link.hover::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 0;
+  background: red;
+  border-radius: 100vw;
+}
+
+.layout-icon{
+  background: rgba(255,255,255,0.1);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.display-relative{
+  position: relative;
+}
+
+.display-absolute{
+  position: absolute;
+  border: 1px solid #000000;
+  background: rgba(200,200,200,0.15);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+.display-absolute-1{
+  left: 0;
+  z-index: 0;
+}
+.display-absolute-2{
+  left: 37px;
+  z-index: 1;
+}
+.display-absolute-3{
+  left: 73px;
+  z-index: 2;
+}
+.display-absolute-4{
+  left: 111px;
+  z-index: 3;
+}
+.display-absolute-5{
+  left: 148px;
+  z-index: 4;
+}
+
+.display-abs-1{
+  right: 37px;
+}
+
+.pattern-bg{
+  background-image: repeating-linear-gradient(45deg, #e87c59 0, #e87c59 3px, transparent 0, transparent 50%);
+  background-size: 10px 10px;
+  background-color: #f46f51;
+}
+
+.subSectionTwoC2{
+  background: #161717;
+  background: -webkit-linear-gradient(272deg, #161717 0%, #012417 100%);
+  background: linear-gradient(272deg, #161717 0%, #012417 100%);
+}
+
+.makeCircle{
+  background: rgba(255,255,255,0.1);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.divText{
+  background: rgba(255,255,255,0.1);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+  width: fit-content;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.form-container{
+  background: rgba(255,255,255,0.1);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.inputs{
+  border: 1px solid #737272;
+  border-radius: 3px;
+  height: 40px;
+  width: 100%;
+}
+
+.textArea{
+  border: 1px solid #737272;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.contactButton{
+  background-color: #737272;
+  padding: 5px 0;
+  border-radius: 3px;
+  color: white;
+}
+
+.aboutUS{
+  background: rgba(255,255,255,0.1);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
