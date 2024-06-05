@@ -24,6 +24,12 @@
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
 }
+.nav-list:hover{
+  background: rgba(255,255,255,0.2);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  color: #ffffff;
+}
 
 .active{
   background-color: rgb(0,0,0);
