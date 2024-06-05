@@ -249,11 +249,6 @@ const SubSectionTwoC2Child3 = () => {
       <DisplayComponents1 />
       <DisplayComponents2 />
       <DisplayComponents3 />
-
-      {/* <div className="flex justify-between"></div>
-      <div className="flex justify-between">
-        <p></p>
-      </div> */}
     </div>
   );
 }

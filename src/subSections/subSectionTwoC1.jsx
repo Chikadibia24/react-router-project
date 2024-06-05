@@ -10,8 +10,6 @@ import {
 
 
 
-
-
 const SubSectionTwoC1 = () => {
   return (
     <div className=" flex gap-1 w-[30%] h-[] p-[0]">

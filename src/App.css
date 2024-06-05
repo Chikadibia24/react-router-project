@@ -65,24 +65,24 @@ link.hover::after {
   z-index: 0;
 }
 .display-absolute-2{
-  left: 37px;
+  left: 34px;
   z-index: 1;
 }
 .display-absolute-3{
-  left: 73px;
+  left: 68px;
   z-index: 2;
 }
 .display-absolute-4{
-  left: 111px;
+  left: 102px;
   z-index: 3;
 }
 .display-absolute-5{
-  left: 148px;
+  left: 136px;
   z-index: 4;
 }
 
 .display-abs-1{
-  right: 37px;
+  right: 34px;
 }
 
 .pattern-bg{

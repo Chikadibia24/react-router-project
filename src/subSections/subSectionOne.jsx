@@ -5,65 +5,85 @@ import { TbArrowBackUp, TbArrowForwardUp } from "react-icons/tb";
 import { RiShare2Line } from "react-icons/ri";
 import { GiFairyWand } from "react-icons/gi";
 
+
+const PillIcons = ({icon,text,addClass1, addClass2}) => {
+  return (
+    <div className={` flex justify-center items-center gap-[8px] p-[10px] pr-[13px] rounded-[30px] ${addClass1}`}>
+      <div className={`flex justify-center items-center ${addClass2}`}>
+        {icon}
+      </div>
+      <p className="text-[13px]">{text}</p>
+    </div>
+  );
+}
+
+const CircleIcons = ({icon, addClass}) => {
+  return (
+    <div
+      className={`display-absolute left-arrow h-[41px] w-[41px] rounded-full flex justify-center items-center text-[20px] ${addClass}`}
+    >
+      {icon}
+    </div>
+  );
+}
+
 const SubSectionOne = () => {
   return (
     <div className="sub-section-1 flex items-center justify-between gap-[35px] w-[100%]">
+      
       <div className="layout-container flex items-center gap-[3px] w-[40%}">
-        <div className="layout-icon flex justify-center items-center gap-[8px] p-[10px] pr-[13px] rounded-[30px]  ">
-          <div className="h-[30px] w-[30px] rounded-full bg-white flex justify-center items-center">
-            <BiCustomize className="text-[#000000]" />
-          </div>
-          <p className="text-[13px]">Layout</p>
-        </div>
+        <PillIcons
+          icon={<BiCustomize className="text-[#000000]" />}
+          addClass1={"layout-icon"}
+          addClass2={"bg-white h-[30px] w-[30px] rounded-full"}
+          text={"Layout"}
+        />
 
-        <div className="flex justify-center items-center gap-[8px] p-[10px] pr-[13px] border-[#171616] border-[1px] rounded-[30px]  ">
-          <div className="h-[30px] w-[30px] rounded-full bg-[#575757] flex justify-center items-center">
-            <AiOutlineControl className="text-[#ffffff]" />
-          </div>
-          <p className="text-[13px]">Customizing</p>
-        </div>
+        <PillIcons
+          icon={<AiOutlineControl />}
+          addClass1={"border-[#171616] border-[1px]"}
+          addClass2={"bg-[#575757] h-[30px] w-[30px] rounded-full"}
+          text={"Customizing"}
+        />
 
-        <div className="flex justify-center items-center gap-[8px] p-[10px] pr-[13px] border-[#171616] border-[0.1em] rounded-[30px]  ">
-          <div className="h-[30px] w-[30px] rounded-full bg-[#575757] flex justify-center items-center">
-            <HiOutlineMegaphone className="text-[#ffffff]" />
-          </div>
-          <p className="text-[13px]">Report Details</p>
-        </div>
+        <PillIcons
+          icon={<HiOutlineMegaphone />}
+          addClass1={"border-[#171616] border-[1px]"}
+          addClass2={"bg-[#575757] h-[30px] w-[30px] rounded-full"}
+          text={"Report Details"}
+        />
       </div>
 
+      
       <div className="display-relative arrows-container flex items-center w-[40%]">
-        <div className="display-absolute display-absolute-1 left-arrow h-[45px] w-[45px] rounded-full flex justify-center items-center">
-          <TbArrowBackUp className="text-[20px]" />
-        </div>
+        <CircleIcons icon={<TbArrowBackUp />} addClass={"display-absolute-1"} />
 
-        <div className="display-absolute display-absolute-2 right-arrow h-[45px] w-[45px] rounded-full flex justify-center items-center">
-          <TbArrowForwardUp className="text-[20px]" />
-        </div>
+        <CircleIcons
+          icon={<TbArrowForwardUp />}
+          addClass={"display-absolute-2"}
+        />
 
-        <div className="display-absolute display-absolute-3 circle-arrow h-[45px] w-[45px] rounded-full flex justify-center items-center">
-          <HiOutlineArrowPath className="text-[20px]" />
-        </div>
+        <CircleIcons
+          icon={<HiOutlineArrowPath />}
+          addClass={"display-absolute-3"}
+        />
 
-        <div className="display-absolute display-absolute-4 share h-[45px] w-[45px] rounded-full flex justify-center items-center">
-          <RiShare2Line className="text-[20px]" />
-        </div>
+        <CircleIcons icon={<RiShare2Line />} addClass={"display-absolute-4"} />
 
-        <div className="display-absolute display-absolute-5 edit h-[45px] w-[45px] rounded-full flex justify-center items-center">
-          <BiEdit className="text-[20px]" />
-        </div>
+        <CircleIcons icon={<BiEdit />} addClass={"display-absolute-5"} />
       </div>
 
+      
       <div className="display-relative share-container flex items-center justify-end w-[20%]">
-        <div className="display-absolute display-abs-1 flex justify-center items-center gap-[8px] p-[10px] pr-[13px] rounded-[30px]  ">
-          <div className="flex justify-center items-center">
-            <BiShareAlt />
-          </div>
-          <p>Share</p>
-        </div>
+        <PillIcons
+          icon={<BiShareAlt className="text-[#ffffff]" />}
+          addClass1={"display-absolute display-abs-1"}
+          // addClass2={"bg-white"}
+          text={"Share"}
+        />
 
-        <div className="display-absolute display-abs-2 edit h-[45px] w-[45px] rounded-full flex justify-center items-center">
-          <GiFairyWand />
-        </div>
+        <CircleIcons icon={<GiFairyWand />} addClass={"display-abs-2"} />
+
       </div>
     </div>
   );

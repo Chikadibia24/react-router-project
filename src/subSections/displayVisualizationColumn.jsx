@@ -11,23 +11,14 @@ import { RiBarChartHorizontalFill, RiBarChartFill } from "react-icons/ri";
 
 
 
-
-const BuildWhiteDiv = ({ prop }) => {
+const BuildDivs = ({ prop, addClass }) => {
   return (
-    <div className="h-[35px] w-[35px] rounded-full bg-[#ffffff] flex justify-center items-center border-[none] text-[#000000]">
+    <div className={`h-[35px] w-[35px] rounded-full border-[1px] border-[#323232] flex justify-center items-center border-[none] ${addClass}`}>
       {prop}
     </div>
   );
 };
 
-
-const BuildDivs = ({ prop }) => {
-  return (
-    <div className="h-[35px] w-[35px] rounded-full border-[1px] border-[#323232] flex justify-center items-center border-[none]">
-      {prop}
-    </div>
-  );
-};
 const DisplayVisualizationColumn = () => {
   return (
     <>
@@ -38,10 +29,12 @@ const DisplayVisualizationColumn = () => {
         </div>
       </div>
 
-      
       <div className="flex flex-col gap-[3px]">
         <div className="flex gap-[5px]">
-          <BuildWhiteDiv prop={<LuBarChartHorizontalBig />} />
+          <BuildDivs
+            prop={<LuBarChartHorizontalBig className="text-[#000000]" />}
+            addClass={"bg-[#ffffff]"}
+          />
 
           <BuildDivs prop={<LuBarChartBig />} />
 
