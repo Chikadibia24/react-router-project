@@ -33,20 +33,22 @@ const Header = () => {
         <h1 className="text-[23px] text-[#a5a4a4]">Dashboard</h1>
       </div>
 
-      <div className="w-[50%] h-[90%] flex justify-center gap-[70px]  items-center text-[#a5a4a4] text-[20px] mb-[-10px] bg-[#000000] rounded-tl-[15px] rounded-tr-[15px]">
-        {links.map(({ label, url }) => (
-          <Link
-            to={url}
-            key={label}
-            // style={bgcolor}
-            // onClick={changeBgColor}
-            // aria-current="page"
-            className="nav-list flex justify-center items-center p-[15px] rounded-[30px] h-[50%] border-[1px] border-[#1f1f20]"
-          >
-            {` ${label} `}
-          </Link>
-        ))}
-      </div>
+      
+        <div className="nav-list-container w-[55%] h-[90%] flex justify-center gap-[70px]  items-center text-[#a5a4a4] text-[16px] mb-[-10px] bg-[#000000] rounded-tl-[15px] rounded-tr-[15px]">
+          {links.map(({ label, url }) => (
+            <Link
+              to={url}
+              key={label}
+              // style={bgcolor}
+              // onClick={changeBgColor}
+              // aria-current="page"
+              className="nav-list flex justify-center items-center p-[15px] rounded-[30px] h-[55%] w-[auto] border-[none]"
+            >
+              {` ${label} `}
+            </Link>
+          ))}
+        </div>
+      
 
       <div className="w-[20%] flex justify-end items-center">
         <img

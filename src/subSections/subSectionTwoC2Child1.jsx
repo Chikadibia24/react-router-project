@@ -37,7 +37,7 @@ const SubSectionTwoC2Child1 = () => {
         <h1 className="text-[45px]">Product ID</h1>
       </div>
 
-      <div className="flex items-center gap-[10px] w-[50%] justify-end">
+      <div className="flex items-center gap-[10px] w-[44%] justify-end">
         <div className="flex items-center gap-[3px] w-[46%] justify-end">
           <MakeCircle icon={<MdDateRange />} />
 
@@ -45,7 +45,7 @@ const SubSectionTwoC2Child1 = () => {
         </div>
 
         <div
-          className="makePills flex items-center w-[44%] justify-end"
+          className="makePills flex items-center w-[50%] justify-end"
           style={{ position: "relative" }}
         >
           <MakePill
@@ -87,6 +87,7 @@ const SubSectionTwoC2Child1 = () => {
             icon={<LuPlus />}
             bgColor={{
               position: "absolute",
+              right: "0",
               borderLeft: "1px solid #000000",
               backgroundColor: "rgba(255,255,255,0.15)",
             }}
