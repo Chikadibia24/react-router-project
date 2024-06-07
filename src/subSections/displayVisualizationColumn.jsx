@@ -13,7 +13,7 @@ import { RiBarChartHorizontalFill, RiBarChartFill } from "react-icons/ri";
 
 const BuildDivs = ({ prop, addClass }) => {
   return (
-    <div className={`h-[35px] w-[35px] rounded-full border-[1px] border-[#323232] flex justify-center items-center border-[none] ${addClass}`}>
+    <div className={`h-[35px] w-[35px] rounded-full border-[1px] border-[#323232] flex justify-center items-center border-[none] hover:cursor-pointer ${addClass}`}>
       {prop}
     </div>
   );
@@ -24,7 +24,7 @@ const DisplayVisualizationColumn = () => {
     <>
       <div className="flex justify-between items-center">
         <p className="text-[14px]">Visualization</p>
-        <div className="text-[33px] text-[#575757] flex justify-center items-center">
+        <div className="text-[33px] text-[#575757] flex justify-center items-center hover:cursor-pointer">
           <AiFillPlusCircle />
         </div>
       </div>

@@ -9,7 +9,7 @@ import { GiFairyWand } from "react-icons/gi";
 const PillIcons = ({icon,text,addClass1, addClass2}) => {
   return (
     <div className={` flex justify-center items-center gap-[8px] p-[10px] pr-[13px] rounded-[30px] ${addClass1}`}>
-      <div className={`flex justify-center items-center ${addClass2}`}>
+      <div className={`flex justify-center items-center hover:cursor-pointer ${addClass2}`}>
         {icon}
       </div>
       <p className="text-[13px]">{text}</p>
@@ -20,7 +20,7 @@ const PillIcons = ({icon,text,addClass1, addClass2}) => {
 const CircleIcons = ({icon, addClass}) => {
   return (
     <div
-      className={`display-absolute left-arrow h-[41px] w-[41px] rounded-full flex justify-center items-center text-[20px] ${addClass}`}
+      className={`display-absolute left-arrow h-[41px] w-[41px] rounded-full flex justify-center items-center text-[20px] hover:cursor-pointer ${addClass}`}
     >
       {icon}
     </div>
@@ -30,7 +30,6 @@ const CircleIcons = ({icon, addClass}) => {
 const SubSectionOne = () => {
   return (
     <div className="sub-section-1 flex items-center justify-between gap-[35px] w-[100%]">
-      
       <div className="layout-container flex items-center gap-[3px] w-[40%}">
         <PillIcons
           icon={<BiCustomize className="text-[#000000]" />}
@@ -54,7 +53,6 @@ const SubSectionOne = () => {
         />
       </div>
 
-      
       <div className="display-relative arrows-container flex items-center w-[40%]">
         <CircleIcons icon={<TbArrowBackUp />} addClass={"display-absolute-1"} />
 
@@ -73,17 +71,15 @@ const SubSectionOne = () => {
         <CircleIcons icon={<BiEdit />} addClass={"display-absolute-5"} />
       </div>
 
-      
       <div className="display-relative share-container flex items-center justify-end w-[20%]">
         <PillIcons
-          icon={<BiShareAlt className="text-[#ffffff]" />}
+          icon={<BiShareAlt className="text-[#ffffff] hover:cursor-pointer" />}
           addClass1={"display-absolute display-abs-1"}
           // addClass2={"bg-white"}
           text={"Share"}
         />
 
         <CircleIcons icon={<GiFairyWand />} addClass={"display-abs-2"} />
-
       </div>
     </div>
   );

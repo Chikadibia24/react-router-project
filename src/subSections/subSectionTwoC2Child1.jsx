@@ -7,7 +7,7 @@ import { LuPlus } from "react-icons/lu";
 
 const MakeCircle = ({icon, bgColor}) => {
   return (
-    <div className="makeCircle h-[35px] w-[35px] rounded-full flex justify-center items-center  text-[#ffffff]" style={bgColor}>
+    <div className="makeCircle h-[35px] w-[35px] rounded-full flex justify-center items-center  text-[#ffffff] hover:cursor-pointer" style={bgColor}>
       {icon}
     </div>
   );
