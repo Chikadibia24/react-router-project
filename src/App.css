@@ -21,9 +21,13 @@
 }
 
 .nav-list{
-  background: rgba(255,255,255,0.1);
+  /* background: rgba(255,255,255,0.1);
   -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px); */
+
+  background: #161717;
+  background: -webkit-linear-gradient(272deg, #161717 0%, #012417 100%);
+  background: linear-gradient(272deg, #161717 0%, #012417 100%);
 }
 .nav-list:hover{
   background: rgba(255,255,255,0.2);
@@ -149,9 +153,9 @@
 }
 
 .form-container{
-  background: rgba(255,255,255,0.1);
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
+  background: #161717;
+  background: -webkit-linear-gradient(272deg, #161717 0%, #012417 100%);
+  background: linear-gradient(272deg, #161717 0%, #012417 100%);
 }
 
 .inputs{
@@ -168,14 +172,22 @@
 }
 
 .contactButton{
-  background-color: #737272;
+  background: #161717;
+  background: -webkit-linear-gradient(272deg, #161717 0%, #012417 100%);
+  background: linear-gradient(272deg, #161717 0%, #012417 100%);
   padding: 5px 0;
   border-radius: 3px;
   color: white;
 }
 
-.aboutUS{
-  background: rgba(255,255,255,0.1);
+.contactButton:hover{
+  background: rgba(1, 37, 23, 0.99);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
+}
+
+.aboutUS{
+  background: #161717;
+  background: -webkit-linear-gradient(272deg, #161717 0%, #012417 100%);
+  background: linear-gradient(272deg, #161717 0%, #012417 100%);
 }

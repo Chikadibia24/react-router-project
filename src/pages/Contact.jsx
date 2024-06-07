@@ -1,10 +1,24 @@
 
 
+const handleChange = (e) => {
+  e.preventDefault;
+  if (e.target.value === "") {
+    alert("Please fill all fields");
+  }
+}
+
+
 const FormInputs = ({ label, type, id, name }) => {
   return (
     <div className="flex flex-col items-center justify-center gap-[5px] w-[100%]">
       <label htmlFor={id}>{label}</label>
-      <input type={type} id={id} name={name} className="inputs"/>
+      <input
+        type={type}
+        id={id}
+        name={name}
+        className="inputs"
+        onChange={handleChange}
+      />
     </div>
   );
 };
@@ -40,6 +54,7 @@ const Contact = () => {
         <form
           action=""
           className="flex flex-col items-center justify-center w-[40%] bg-[#ffffff] rounded-lg text-[#464747] text-[23px] p-[10px] gap-[20px]"
+          onSubmit={handleChange}
         >
           <FormInputs
             label={"Enter your name below:"}
@@ -55,7 +70,11 @@ const Contact = () => {
             name={"email"}
           />
 
-          <FormTextArea label={"Type your message below:"} name={"textArea"} id={"textArea"} />
+          <FormTextArea
+            label={"Type your message below:"}
+            name={"textArea"}
+            id={"textArea"}
+          />
 
           <SubmitButton text={"Submit"} />
         </form>

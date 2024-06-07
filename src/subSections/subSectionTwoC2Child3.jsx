@@ -179,7 +179,7 @@ const DisplayComponents3 = () => {
       <div className="flex flex-col gap-[3px]">
         <div className="flex justify-between items-center w-[100%]">
           <div className="flex items-center w-[30%]">
-            <Paragraph text={"1,208"} style={{ display: "none" }} />
+            <Paragraph text={"1,240"} style={{ display: "none" }} />
           </div>
 
           <div className="position-relative  flex items-center justify-start w-[70%]">
