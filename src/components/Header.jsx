@@ -34,7 +34,7 @@ const Header = () => {
       </div>
 
       
-        <div className="nav-list-container w-[55%] h-[90%] flex justify-center gap-[70px]  items-center text-[#a5a4a4] text-[16px] mb-[-10px] bg-[#000000] rounded-tl-[15px] rounded-tr-[15px]">
+        <div className="nav-list-container w-[55%] h-[90%] flex justify-center gap-[70px]  items-center text-[#a5a4a4] text-[16px] mb-[-10px] bg-[#000000] rounded-tl-[70px] rounded-tr-[70px]">
           {links.map(({ label, url }) => (
             <Link
               to={url}
