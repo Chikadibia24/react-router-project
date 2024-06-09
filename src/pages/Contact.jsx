@@ -90,13 +90,10 @@ const Contact = () => {
     setEmail((e.target.value = ""));
     setTextarea((e.target.value = ""));
   }
-    // setName(e.target.value = "");
-    // setEmail(e.target.value = "");
-    // setTextarea(e.target.value = "");
 }
 
   return (
-    <section className="section flex items-center justify-center bg-[#000000] w-[100%] pt-[100px] md:pt-10 pr-[10px] pl-[10px]">
+    <section className="section flex items-center justify-center bg-[#000000] w-[100%] pt-[200px] md:pt-10 pr-[10px] pl-[10px]">
       <div className="form-container flex flex-col items-center justify-center w-[100%] md:w-[70%] rounded-lg text-white p-[20px]">
         <h1 className=" text-[40px]">Contact Us</h1>
         <form
