@@ -102,7 +102,6 @@ const DisplayComponents1 = () => {
 }
 
 
-
 const DisplayComponents2 = () => {
   return (
     <div className="flex flex-col gap-[3px]">
@@ -179,7 +178,7 @@ const DisplayComponents3 = () => {
           <Paragraph text={"1,240"} style={{ display: "none" }} />
         </div>
 
-        <div className="position-relative  flex items-center justify-start w-[100%] md:w-[70%] border">
+        <div className="position-relative  flex items-center justify-start w-[100%] md:w-[70%] ">
           <PillDivs
             text={"400"}
             style={{
@@ -248,5 +247,4 @@ const SubSectionTwoC2Child3 = () => {
     </div>
   );
 }
-
 export default SubSectionTwoC2Child3;
