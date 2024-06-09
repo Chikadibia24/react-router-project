@@ -3,7 +3,7 @@ import SubSectionTwoC2 from "./subSectionTwoC2";
 
 const SubSectionTwo = () => {
   return (
-    <div className=" flex gap-[3px]  w-[100%]">
+    <div className="flex flex-col md:flex-row gap-[3px]  w-[100%]">
       <SubSectionTwoC1 />
       <SubSectionTwoC2 />
     </div>

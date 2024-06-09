@@ -29,7 +29,7 @@ const CircleIcons = ({icon, addClass}) => {
 
 const SubSectionOne = () => {
   return (
-    <div className="sub-section-1 flex items-center justify-between gap-[35px] w-[100%]">
+    <div className="sub-section-1 hidden h-[auto] md:flex items-center justify-between gap-[35px] w-[100%] border">
       <div className="layout-container flex items-center gap-[3px] w-[40%}">
         <PillIcons
           icon={<BiCustomize className="text-[#000000]" />}

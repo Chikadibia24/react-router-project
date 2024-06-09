@@ -3,7 +3,7 @@ import { FaArrowDownLong } from "react-icons/fa6";
 
 const Paragraph = ({text, divText, style, style2}) => {
   return (
-    <div className="flex gap-2 items-center">
+    <div className="hidden md:flex gap-2 items-center">
       <p style={style2}>{text}</p>
       <div className="divText" style={style}>
         <span className="m-0 text-[13px]">{divText}</span>
@@ -38,7 +38,7 @@ const DownArrowText = ({text1,text2}) => {
 
 const DisplayComponents1 = () => {
   return (
-    <>
+    
     <div className="flex flex-col gap-[3px]">
       <div className="flex justify-between items-center w-[100%]">
         <div className="flex items-center w-[30%]">
@@ -97,7 +97,7 @@ const DisplayComponents1 = () => {
 
       <DownArrowText text1={<FaArrowDownLong />} text2={"88%"}/>
     </div>
-    </>
+    
   );
 }
 
@@ -105,7 +105,7 @@ const DisplayComponents1 = () => {
 
 const DisplayComponents2 = () => {
   return (
-    <>
+    
       <div className="flex flex-col gap-[3px]">
         <div className="flex justify-between items-center w-[100%]">
           <div className="flex items-center w-[30%]">
@@ -168,14 +168,14 @@ const DisplayComponents2 = () => {
 
         <DownArrowText text1={<FaArrowDownLong />} text2={"86%"} />
       </div>
-    </>
+    
   );
 };
 
 
 const DisplayComponents3 = () => {
   return (
-    <>
+    
       <div className="flex flex-col gap-[3px]">
         <div className="flex justify-between items-center w-[100%]">
           <div className="flex items-center w-[30%]">
@@ -238,7 +238,6 @@ const DisplayComponents3 = () => {
 
         <DownArrowText text1={<FaArrowDownLong />} text2={"46%"} />
       </div>
-    </>
   );
 };
 

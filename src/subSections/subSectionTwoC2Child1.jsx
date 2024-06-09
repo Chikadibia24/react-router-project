@@ -32,13 +32,13 @@ const MakePill = ({image, bgColor}) => {
 const SubSectionTwoC2Child1 = () => {
 
   return (
-    <div className="flex items-center justify-between w-[100%]">
-      <div className="flex items-center w-[50%]">
+    <div className="flex flex-col md:flex-row items-center justify-between w-[100%]">
+      <div className="flex justify-center md:justify-start items-center w-[100%] md:w-[50%]">
         <h1 className="text-[45px]">Product ID</h1>
       </div>
 
-      <div className="flex items-center gap-[10px] w-[44%] justify-end">
-        <div className="flex items-center gap-[3px] w-[46%] justify-end">
+      <div className="flex justify-center  md:items-center gap-[10px] w-[100%] md:w-[44%] md:justify-end border">
+        <div className="flex items-center gap-[3px] md:w-[46%] justify-end border">
           <MakeCircle icon={<MdDateRange />} />
 
           <MakeCircle icon={<GiSettingsKnobs />} />

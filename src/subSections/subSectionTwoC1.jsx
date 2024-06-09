@@ -12,7 +12,7 @@ import {
 
 const SubSectionTwoC1 = () => {
   return (
-    <div className=" flex gap-1 w-[30%] h-[] p-[0]">
+    <div className=" flex gap-1 w-[100%] md:w-[30%] h-[] p-[0]">
       <div className="visualization flex flex-col gap-1 w-[50%]">
         <div className="flex flex-col gap-[10px] bg-[#171616] w-[100%] h-[28%] rounded-lg p-[7px]">
           <DisplayVisualizationColumn />

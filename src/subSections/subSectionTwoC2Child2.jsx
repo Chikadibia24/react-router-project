@@ -1,7 +1,7 @@
 
 const SubSectionTwoC2Child2 = () => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="hidden md:flex items-center justify-between">
       <div className="flex w-[33%] items-center gap-[10px]">
         <p className="flex gap-[5px] items-center text-[35px]">
           17<span className="text-[25px]">%</span>
