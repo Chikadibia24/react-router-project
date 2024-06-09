@@ -45,7 +45,7 @@ const DisplayComponents1 = () => {
           <Paragraph text={"1,600"} style={{ display: "none" }} />
         </div>
 
-        <div className="position-relative  flex items-center justify-start w-[70%]">
+        <div className="position-relative  flex items-center justify-start w-[100%] md:w-[70%]">
           <PillDivs
             text={"700"}
             style={{
