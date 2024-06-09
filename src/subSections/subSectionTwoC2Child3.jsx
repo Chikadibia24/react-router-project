@@ -105,139 +105,136 @@ const DisplayComponents1 = () => {
 
 const DisplayComponents2 = () => {
   return (
-    
-      <div className="flex flex-col gap-[3px]">
-        <div className="flex justify-between items-center w-[100%]">
-          <div className="flex items-center w-[30%]">
-            <Paragraph text={"1,410"} style={{ display: "none" }} />
-          </div>
-
-          <div className="position-relative  flex items-center justify-start w-[70%]">
-            <PillDivs
-              text={"600"}
-              style={{
-                backgroundColor: "#059DCC",
-                height: "45px",
-                width: "190px",
-                borderTopLeftRadius: "30px",
-                borderBottomLeftRadius: "30px",
-              }}
-            />
-
-            <PillDivs
-              text={"500"}
-              style={{
-                backgroundColor: "rgba(2, 213, 141,0.9)",
-                height: "45px",
-                width: "160px",
-                position: "absolute",
-                bottom: "0",
-                left: "20%",
-                right: "80%",
-                zIndex: "1",
-                display: "flex",
-                justifyContent: "end",
-                paddingRight: "10px",
-                borderRadius: "30px",
-              }}
-            />
-
-            <PillDivs
-              text={"300"}
-              style={{
-                backgroundColor: "#BAE011",
-                height: "45px",
-                width: "120px",
-                display: "flex",
-                justifyContent: "end",
-                borderTopRightRadius: "30px",
-                borderBottomRightRadius: "30px",
-                paddingRight: "10px",
-              }}
-            />
-          </div>
-
-          <div className="flex items-center w-[30%] justify-end">
-            <Paragraph
-              text={"Discovery"}
-              divText={"8d"}
-              style2={{ fontSize: "12px" }}
-            />
-          </div>
+    <div className="flex flex-col gap-[3px]">
+      <div className="flex justify-between items-center w-[100%]">
+        <div className="flex items-center w-[30%]">
+          <Paragraph text={"1,410"} style={{ display: "none" }} />
         </div>
 
-        <DownArrowText text1={<FaArrowDownLong />} text2={"86%"} />
+        <div className="position-relative  flex items-center justify-start w-[100%] md:w-[70%]">
+          <PillDivs
+            text={"600"}
+            style={{
+              backgroundColor: "#059DCC",
+              height: "45px",
+              width: "190px",
+              borderTopLeftRadius: "30px",
+              borderBottomLeftRadius: "30px",
+            }}
+          />
+
+          <PillDivs
+            text={"500"}
+            style={{
+              backgroundColor: "rgba(2, 213, 141,0.9)",
+              height: "45px",
+              width: "160px",
+              position: "absolute",
+              bottom: "0",
+              left: "20%",
+              right: "80%",
+              zIndex: "1",
+              display: "flex",
+              justifyContent: "end",
+              paddingRight: "10px",
+              borderRadius: "30px",
+            }}
+          />
+
+          <PillDivs
+            text={"300"}
+            style={{
+              backgroundColor: "#BAE011",
+              height: "45px",
+              width: "120px",
+              display: "flex",
+              justifyContent: "end",
+              borderTopRightRadius: "30px",
+              borderBottomRightRadius: "30px",
+              paddingRight: "10px",
+            }}
+          />
+        </div>
+
+        <div className="flex items-center w-[30%] justify-end">
+          <Paragraph
+            text={"Discovery"}
+            divText={"8d"}
+            style2={{ fontSize: "12px" }}
+          />
+        </div>
       </div>
-    
+
+      <DownArrowText text1={<FaArrowDownLong />} text2={"86%"} />
+    </div>
   );
 };
 
 
 const DisplayComponents3 = () => {
   return (
-    
-      <div className="flex flex-col gap-[3px]">
-        <div className="flex justify-between items-center w-[100%]">
-          <div className="flex items-center w-[30%]">
-            <Paragraph text={"1,240"} style={{ display: "none" }} />
-          </div>
-
-          <div className="position-relative  flex items-center justify-start w-[70%]">
-            <PillDivs
-              text={"400"}
-              style={{
-                backgroundColor: "#059DCC",
-                height: "45px",
-                width: "145px",
-                borderTopLeftRadius: "30px",
-                borderBottomLeftRadius: "30px",
-              }}
-            />
-
-            <PillDivs
-              text={"490"}
-              style={{
-                backgroundColor: "rgba(2, 213, 141,0.9)",
-                height: "45px",
-                width: "155px",
-                position: "absolute",
-                bottom: "0",
-                left: "13%",
-                right: "87%",
-                zIndex: "1",
-                display: "flex",
-                justifyContent: "end",
-                paddingRight: "10px",
-                borderRadius: "30px",
-              }}
-            />
-
-            <PillDivs
-              text={"350"}
-              style={{
-                backgroundColor: "#BAE011",
-                height: "45px",
-                width: "135px",
-                display: "flex",
-                justifyContent: "end",
-                borderTopRightRadius: "30px",
-                borderBottomRightRadius: "30px",
-                paddingRight: "10px",
-              }}
-            />
-          </div>
-
-          <div className="flex items-center w-[30%] justify-end">
-            <Paragraph
-              text={"Qualification"}
-              divText={"22d"}
-              style2={{ fontSize: "12px" }}
-            />
-          </div>
+    <div className="flex flex-col gap-[3px]">
+      <div className="flex justify-between items-center w-[100%]">
+        <div className="flex items-center w-[30%]">
+          <Paragraph text={"1,240"} style={{ display: "none" }} />
         </div>
 
-        <DownArrowText text1={<FaArrowDownLong />} text2={"46%"} />
+        <div className="position-relative  flex items-center justify-start w-[100%] md:w-[70%] border">
+          <PillDivs
+            text={"400"}
+            style={{
+              backgroundColor: "#059DCC",
+              height: "45px",
+              width: "145px",
+              borderTopLeftRadius: "30px",
+              borderBottomLeftRadius: "30px",
+            }}
+          />
+
+          <PillDivs
+            text={"490"}
+            style={{
+              backgroundColor: "rgba(2, 213, 141,0.9)",
+              height: "45px",
+              width: "155px",
+              position: "absolute",
+              bottom: "0",
+              left: "16%",
+              right: "84%",
+              zIndex: "1",
+              display: "flex",
+              justifyContent: "end",
+              paddingRight: "10px",
+              borderRadius: "30px",
+            }}
+          />
+
+          <PillDivs
+            text={"350"}
+            style={{
+              backgroundColor: "#BAE011",
+              height: "45px",
+              width: "135px",
+              display: "flex",
+              justifyContent: "end",
+              borderTopRightRadius: "30px",
+              borderBottomRightRadius: "30px",
+              paddingRight: "10px",
+            }}
+          />
+        </div>
+
+        <div className="flex items-center w-[30%] justify-end">
+          <Paragraph
+            text={"Qualification"}
+            divText={"22d"}
+            style2={{ fontSize: "12px" }}
+          />
+        </div>
       </div>
+
+      <DownArrowText text1={<FaArrowDownLong />} text2={"46%"} />
+    </div>
   );
 };
 

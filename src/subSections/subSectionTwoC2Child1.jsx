@@ -38,14 +38,14 @@ const SubSectionTwoC2Child1 = () => {
       </div>
 
       <div className="flex justify-center  md:items-center gap-[10px] w-[100%] md:w-[44%] md:justify-end">
-        <div className="flex items-center gap-[3px] w-[40%] md:w-[46%] justify-end md:justify-end">
+        <div className="flex items-center gap-[3px] w-[43%] md:w-[46%] justify-end md:justify-end">
           <MakeCircle icon={<MdDateRange />} />
 
           <MakeCircle icon={<GiSettingsKnobs />} />
         </div>
 
         <div
-          className="makePills flex items-center w-[60%] md:w-[50%] justify-end md:justify-end"
+          className="makePills flex items-center w-[57%] md:w-[50%] justify-end md:justify-end"
           style={{ position: "relative" }}
         >
           <MakePill
