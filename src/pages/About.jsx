@@ -1,7 +1,7 @@
 const AboutPage = () => {
   return (
     <section className="section flex flex-col items-center justify-center bg-[#000000] w-[100%] pt-10 pr-[10px] pl-[10px] text-[#fff]">
-      <div className="aboutUS flex flex-col items-center justify-center w-[90%] rounded-lg gap-[25px] p-[20px]">
+      <div className="aboutUS flex flex-col items-center justify-center w-[100%] md:w-[90%] rounded-lg gap-[25px] p-[20px]">
         <div>
           <img
             src={
@@ -12,7 +12,7 @@ const AboutPage = () => {
           />
         </div>
 
-        <div className="flex flex-col gap-[15px] items-center justify-center text-[17px] w-[90%]">
+        <div className="flex flex-col gap-[15px] items-center justify-center text-[17px] w-[98%] md:w-[90%]">
           <div>
             We are a premier software development firm dedicated to transforming
             ideas into innovative, high-quality software solutions. Since our

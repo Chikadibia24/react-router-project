@@ -37,8 +37,8 @@ const SubSectionTwoC2Child1 = () => {
         <h1 className="text-[45px]">Product ID</h1>
       </div>
 
-      <div className="flex justify-center  md:items-center gap-[10px] w-[100%] md:w-[44%] md:justify-end border">
-        <div className="flex items-center gap-[3px] w-[40%] md:w-[46%] justify-end md:justify-end border">
+      <div className="flex justify-center  md:items-center gap-[10px] w-[100%] md:w-[44%] md:justify-end">
+        <div className="flex items-center gap-[3px] w-[40%] md:w-[46%] justify-end md:justify-end">
           <MakeCircle icon={<MdDateRange />} />
 
           <MakeCircle icon={<GiSettingsKnobs />} />
