@@ -45,7 +45,7 @@ const SubSectionTwoC2Child1 = () => {
         </div>
 
         <div
-          className="makePills flex items-center w-[60%] md:w-[50%] justify-start md:justify-end"
+          className="makePills flex items-center w-[60%] md:w-[50%] justify-center md:justify-end"
           style={{ position: "relative" }}
         >
           <MakePill
