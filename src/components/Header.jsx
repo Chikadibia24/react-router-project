@@ -27,14 +27,14 @@ const Header = () => {
 
   return (
     <nav className="nav w-[100%] h-[75px] flex justify-between items-center text-white text-xl bg-[] pr-5 pl-5">
-      <div className="w-[20%] flex justify-start gap-2  items-center">
-        <HiSquare3Stack3D className="text-[35px]" />
+      <div className=" w-[50%] md:w-[20%] flex justify-start gap-2  items-center">
+        <HiSquare3Stack3D className="text-[35px] hover:cursor-pointer" />
         <span className="text-[#a5a4a4] text-[22px]">|</span>
         <h1 className="text-[23px] text-[#a5a4a4]">Dashboard</h1>
       </div>
 
       
-        <div className="nav-list-container w-[55%] h-[90%] flex justify-center gap-[70px]  items-center text-[#a5a4a4] text-[16px] mb-[-10px] bg-[#000000] rounded-tl-[70px] rounded-tr-[70px]">
+        <div className="nav-list-container w-[50%] md:w-[55%] h-[90%] hidden md:flex justify-center gap-[70px]  items-center text-[#a5a4a4] text-[16px] mb-[-10px] bg-[#000000] rounded-tl-[70px] rounded-tr-[70px]">
           {links.map(({ label, url }) => (
             <Link
               to={url}
@@ -56,7 +56,7 @@ const Header = () => {
             "https://res.cloudinary.com/chikadibia/image/upload/v1717258515/My-GitHub-DP_fcjzv3.jpg"
           }
           alt="my-dp"
-          className="w-[55px] h-[55px] rounded-[50%]"
+          className="w-[55px] h-[55px] rounded-[50%] hover:cursor-pointer"
         />
       </div>
     </nav>
