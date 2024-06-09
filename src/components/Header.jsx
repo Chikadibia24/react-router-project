@@ -26,31 +26,30 @@ const Header = () => {
   ];
 
   return (
-    <nav className="nav w-[100%] h-[75px] flex justify-between items-center text-white text-xl bg-[] pr-5 pl-5 fixed z-[1]">
-      <div className=" w-[50%] md:w-[20%] flex justify-start gap-2  items-center">
+    <nav className="nav w-[100%] h-[75px] flex justify-between items-center text-xl bg-[] pr-5 pl-5 fixed md:sticky z-[10]">
+      <div className=" hidden md:w-[20%] md:flex justify-start gap-2  items-center text-white">
         <HiSquare3Stack3D className="text-[35px] hover:cursor-pointer" />
         <span className="text-[#a5a4a4] text-[22px]">|</span>
         <h1 className="text-[23px] text-[#a5a4a4]">Dashboard</h1>
       </div>
 
-      
-        <div className="nav-list-container w-[50%] md:w-[55%] h-[90%] hidden md:flex justify-center gap-[70px]  items-center text-[#a5a4a4] text-[16px] mb-[-10px] bg-[#000000] rounded-tl-[70px] rounded-tr-[70px]">
-          {links.map(({ label, url }) => (
-            <Link
-              to={url}
-              key={label}
-              // style={bgcolor}
-              // onClick={changeBgColor}
-              // aria-current="page"
-              className="nav-list flex justify-center items-center p-[15px] rounded-[30px] h-[55%] w-[auto] border-[none]"
-            >
-              {` ${label} `}
-            </Link>
-          ))}
-        </div>
-      
+      <div className="nav-list-container w-[100%] md:w-[55%] h-[90%] flex justify-center gap-[50px] md:gap-[70px]  items-center text-[#a5a4a4] text-[12px] md:text-[16px] mb-[-10px] bg-[#000000] rounded-tl-[70px] rounded-tr-[70px]">
+        {links.map(({ label, url }) => (
+              <Link
+                to={url}
+                key={label}
+                // style={bgcolor}
+                // onClick={changeBgColor}
+                // aria-current="page"
+                className="nav-list flex justify-center items-center p-[15px] rounded-[30px] h-[55%] w-[auto] border-[none]"
+              >
+                {` ${label} `}
+              </Link>
+            
+        ))}
+      </div>
 
-      <div className="w-[20%] flex justify-end items-center">
+      <div className="hidden md:w-[20%] md:flex justify-end items-center">
         <img
           src={
             "https://res.cloudinary.com/chikadibia/image/upload/v1717258515/My-GitHub-DP_fcjzv3.jpg"
