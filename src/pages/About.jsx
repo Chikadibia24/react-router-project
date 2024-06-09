@@ -1,6 +1,6 @@
 const AboutPage = () => {
   return (
-    <section className="section flex flex-col items-center justify-center bg-[#000000] w-[100%] pt-10 pr-[10px] pl-[10px] text-[#fff]">
+    <section className="section flex flex-col items-center justify-center bg-[#000000] w-[100%] pt-[100px] md:pt-10 pr-[10px] pl-[10px] text-[#fff]">
       <div className="aboutUS flex flex-col items-center justify-center w-[100%] md:w-[90%] rounded-lg gap-[25px] p-[20px]">
         <div>
           <img
