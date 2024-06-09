@@ -33,19 +33,18 @@ const Header = () => {
         <h1 className="text-[23px] text-[#a5a4a4]">Dashboard</h1>
       </div>
 
-      <div className="nav-list-container w-[100%] md:w-[55%] h-[90%] flex justify-center gap-[50px] md:gap-[70px]  items-center text-[#a5a4a4] text-[12px] md:text-[16px] mb-[-10px] bg-[#000000] rounded-tl-[70px] rounded-tr-[70px]">
+      <div className="nav-list-container w-[95%] md:w-[55%] h-[90%] flex justify-center gap-[50px] md:gap-[70px]  items-center text-[#a5a4a4] text-[12px] md:text-[16px] mb-[-10px] bg-[#000000] rounded-tl-[60px] md:rounded-tl-[70px] rounded-tr-[60px] md:rounded-tr-[70px]">
         {links.map(({ label, url }) => (
-              <Link
-                to={url}
-                key={label}
-                // style={bgcolor}
-                // onClick={changeBgColor}
-                // aria-current="page"
-                className="nav-list flex justify-center items-center p-[15px] rounded-[30px] h-[55%] w-[auto] border-[none]"
-              >
-                {` ${label} `}
-              </Link>
-            
+          <Link
+            to={url}
+            key={label}
+            // style={bgcolor}
+            // onClick={changeBgColor}
+            // aria-current="page"
+            className="nav-list flex justify-center items-center p-[15px] rounded-[30px] h-[55%] w-[auto] border-[none]"
+          >
+            {` ${label} `}
+          </Link>
         ))}
       </div>
 
