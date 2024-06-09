@@ -26,7 +26,7 @@ const Header = () => {
   ];
 
   return (
-    <nav className="nav w-[100%] h-[75px] flex justify-between items-center text-white text-xl bg-[] pr-5 pl-5">
+    <nav className="nav w-[100%] h-[75px] flex justify-between items-center text-white text-xl bg-[] pr-5 pl-5 fixed z-[1]">
       <div className=" w-[50%] md:w-[20%] flex justify-start gap-2  items-center">
         <HiSquare3Stack3D className="text-[35px] hover:cursor-pointer" />
         <span className="text-[#a5a4a4] text-[22px]">|</span>
